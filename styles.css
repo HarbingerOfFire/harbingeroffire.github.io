@@ -1,3 +1,51 @@
+.sidenav {
+  text-align: center;
+  height: 100%; 
+  width: 0; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  background-color: #f1f1f1; 
+  overflow-x: hidden; 
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #111;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+    display: block;
+    color: #666;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  /*color: #000;*/
+  text-decoration: none;
+  z-index: 1;
+  position: 20px;
+  top: 0;
+  right: 0px;
+  font-size: 36px;
+  margin-top: 10px;
+  font-size: 50px;
+}
+
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -20,6 +68,15 @@ h2 {
   color: #58a6ff;
 }
 
+h3 {
+  color: #58a6ff;
+  margin-top: 1.5rem;
+}
+
+h4 {
+  color: #58a6ff;
+  margin-top: 1rem;
+}
 .section {
   padding: 2rem;
   max-width: 800px;
@@ -45,61 +102,47 @@ a.button:hover {
   background-color: #444;
 }
 
-/* Sidebar */
-.sidebar {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: width 0.3s;
-  padding-top: 60px;
-}
-
-.sidebar a {
-  padding: 10px 20px;
-  text-decoration: none;
-  color: #ccc;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidebar a:hover {
-  color: #58a6ff;
-}
-
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  background: none;
-  border: none;
-  color: #ccc;
-  font-size: 30px;
-  cursor: pointer;
-}
-
-.open-btn {
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  background: #333;
-  color: #fff;
-  border: none;
-  font-size: 22px;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  z-index: 2;
-}
-
 footer {
   text-align: center;
   padding: 1rem;
   background-color: #1f1f1f;
   font-size: 0.9rem;
   color: #999;
+}
+
+.logo {
+  display: block;
+  margin: 2rem auto 1rem auto;
+  width: 120px;
+  height: 120px;
+  background-size: contain;
+  border-radius: 50%;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+
+.main_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main_content > * {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.secondary_content {
+  background: #23272f;
+  color: #e0e0e0;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  margin: 1.5rem 0;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+a {
+  color: #58a6ff;
+  text-decoration: underline;
 }

@@ -1,0 +1,34 @@
+<!doctype HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="icon" type="image/x-icon" href="assets/harbinger.png" />
+    <script src="../main.js" defer></script>
+    <title>Malachi Syfrett's About Me</title>
+</head>
+<body onload="getLinks_fromPages()" id="main">
+    <div id="sidebar" class="sidenav">
+        <a href="javascript:closeNav()" class="closebtn">&times;</a>
+        <a href="../index.html" class="sidelinks">Home</a>
+        <div id="links" class="sidelinks"></div>
+    </div>
+
+    <a href="javascript:openNav()" class="main openbtn">&equiv;</a>
+
+    <header>
+        <a href="../index.html"><img src="../assets/harbinger.png" class="logo" alt="HarbingerOfFire Logo" /></a>
+        <h1>Malachi Syfrett</h1>
+        <h2>HarbingerOfFire</h2>
+        <p>Physicist · Astronomer</p>
+        <p>Backend Developer · Security Analyst · Data Analyst</p>
+    </header>
+
+    <main>
+        <section class="secondary_content">
+
+        </section>
+    </main>
+</body>
+</html>

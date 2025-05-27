@@ -1,64 +1,38 @@
-<!DOCTYPE html>
+<!doctype HTML>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Malachi Syfrett</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="assets/harbinger.png">
+        <script src="main.js" defer></script>
+        <title>Malachi Syfrett's Page</title>
+    </head>
 
-  <div id="sidebar" class="sidebar">
-    <button onclick="toggleSidebar()" class="close-btn">×</button>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#research">Research</a>
-    <a href="#contact">Contact</a>
-  </div>
-
-  <button class="open-btn" onclick="toggleSidebar()">☰ Menu</button>
-
-  <header>
-    <h1>Malachi Syfrett</h1>
-    <p>Backend Developer · Security Analyst · Data Analyst</p>
-  </header>
-
-  <main>
-    <section id="about" class="section">
-      <h2>About Me</h2>
-      <p>I'm a software engineer and researcher deeply involved in backend systems, digital security, and data science. I also explore advanced topics in physics, particularly general relativity and quantum mechanics, and apply them to theoretical models and simulations.</p>
-    </section>
-
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>BivittatusDB</strong>: A high-performance document and graph-aware embedded database engine.</li>
-        <li><strong>CREATE ISA</strong>: Designing a RISC architecture for adaptive task execution.</li>
-        <li><strong>PMDSA</strong>: A python code to semi-automate the discovery of binary star systems.</li>
-      </ul>
-    </section>
-
-    <section id="research" class="section">
-      <h2>Research</h2>
-      <p>I maintain a ResearchGate profile with contributions to special/general relativity and quantum theory modeling:</p>
-      <a href="https://www.researchgate.net/profile/Malachi-Syfrett" target="_blank" class="button">Visit ResearchGate →</a>
-    </section>
-
-    <section class="section">
-      <h2>Explore My Work</h2>
-      <a href="https://github.com/HarbingerOfFire" target="_blank" class="button">GitHub Profile →</a>
-    </section>
-
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p>Reach out via GitHub or ResearchGate. Email support can be added if preferred.</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Malachi Syfrett</p>
-  </footer>
-
-  <script src="main.js"></script>
-</body>
+    <div id="sidebar" class="sidenav">
+        <a href="javascript:closeNav()" class="closebtn">&times;</a>
+        <a href="../index.html" class="sidelinks">Home</a>
+    <div id="links" class="sidelinks" ></div>
+    </div>
+    <body onload="getLinks()" id="main">
+        <a href="javascript:openNav()" class="main openbtn">&equiv;</a>
+        <header>
+            <a href="index.html"><img src="assets/harbinger.png" class="logo"></a>
+            <h1>Malachi Syfrett</h1>
+            <h2>HarbingerOfFire</h2>
+            <p>Backend Developer · Security Analyst · Data Analyst</p>
+        </header>
+        <main>
+            <section class="main_content">
+                <h2>Welcome</h2>
+                <p>Welcome to my personal page! Here you can find information about my projects, skills, and interests.</p>
+                <p>Feel free to explore and learn more about what I do.</p>
+                <h2>
+                    <a href="javascript:openNav()">
+                        EXPLORE
+                    </a>
+                </h2>
+            </section>
+        </main>
+    </body>
 </html>
