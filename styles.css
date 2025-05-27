@@ -1,44 +1,105 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
 }
 
 header {
-  background-color: #333;
-  color: #fff;
-  padding: 1em 0;
   text-align: center;
+  padding: 2rem 1rem;
+  background-color: #1f1f1f;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.2rem;
 }
 
-nav ul li {
-  display: inline;
-  margin: 0 1em;
+h2 {
+  color: #58a6ff;
 }
 
-nav ul li a {
-  color: #fff;
+.section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
+}
+
+a.button {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  background-color: #333;
+  color: #58a6ff;
   text-decoration: none;
+  border-radius: 6px;
+  margin-top: 1rem;
 }
 
-main {
-  padding: 2em;
+a.button:hover {
+  background-color: #444;
 }
 
-section {
-  margin-bottom: 2em;
+/* Sidebar */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: width 0.3s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #ccc;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #58a6ff;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  background: none;
+  border: none;
+  color: #ccc;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.open-btn {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background: #333;
+  color: #fff;
+  border: none;
+  font-size: 22px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 2;
 }
 
 footer {
-  background-color: #333;
-  color: #fff;
   text-align: center;
-  padding: 1em 0;
+  padding: 1rem;
+  background-color: #1f1f1f;
+  font-size: 0.9rem;
+  color: #999;
 }

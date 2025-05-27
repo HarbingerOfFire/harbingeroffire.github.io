@@ -7,38 +7,58 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
+  <div id="sidebar" class="sidebar">
+    <button onclick="toggleSidebar()" class="close-btn">×</button>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#research">Research</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <button class="open-btn" onclick="toggleSidebar()">☰ Menu</button>
+
   <header>
     <h1>Malachi Syfrett</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <p>Backend Developer · Security Analyst · Data Analyst</p>
   </header>
+
   <main>
-    <section id="about">
+    <section id="about" class="section">
       <h2>About Me</h2>
-      <p>Backend Developer, Security Analyst, and Data Analyst with a strong background in physics research.</p>
+      <p>I'm a software engineer and researcher deeply involved in backend systems, digital security, and data science. I also explore advanced topics in physics, particularly general relativity and quantum mechanics, and apply them to theoretical models and simulations.</p>
     </section>
-    <section id="projects">
+
+    <section id="projects" class="section">
       <h2>Projects</h2>
-      <p>Explore my work on <a href="https://github.com/HarbingerOfFire" target="_blank">GitHub</a>.</p>
+      <ul>
+        <li><strong>BivittatusDB</strong>: A high-performance document and graph-aware embedded database engine.</li>
+        <li><strong>CREATE ISA</strong>: Designing a RISC architecture for adaptive task execution.</li>
+        <li><strong>PMDSA</strong>: A python code to semi-automate the discovery of binary star systems.</li>
+      </ul>
     </section>
-    <section id="publications">
-      <h2>Publications</h2>
-      <p>View my research on <a href="https://www.researchgate.net/profile/Malachi-Syfrett" target="_blank">ResearchGate</a>.</p>
+
+    <section id="research" class="section">
+      <h2>Research</h2>
+      <p>I maintain a ResearchGate profile with contributions to special/general relativity and quantum theory modeling:</p>
+      <a href="https://www.researchgate.net/profile/Malachi-Syfrett" target="_blank" class="button">Visit ResearchGate →</a>
     </section>
-    <section id="contact">
+
+    <section class="section">
+      <h2>Explore My Work</h2>
+      <a href="https://github.com/HarbingerOfFire" target="_blank" class="button">GitHub Profile →</a>
+    </section>
+
+    <section id="contact" class="section">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:harbingeroffire@proton.me">harbingeroffire@proton.me</a></p>
+      <p>Reach out via GitHub or ResearchGate. Email support can be added if preferred.</p>
     </section>
   </main>
+
   <footer>
     <p>&copy; 2025 Malachi Syfrett</p>
   </footer>
+
   <script src="main.js"></script>
 </body>
 </html>

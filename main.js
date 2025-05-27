@@ -1,10 +1,8 @@
-// Example: Theme toggle functionality
-document.addEventListener('DOMContentLoaded', () => {
-  const toggleButton = document.createElement('button');
-  toggleButton.textContent = 'Toggle Theme';
-  document.body.insertBefore(toggleButton, document.body.firstChild);
+function toggleSidebar() {
+  const sidebar = document.getElementById("sidebar");
+  sidebar.style.width = sidebar.style.width === "250px" ? "0" : "250px";
+}
 
-  toggleButton.addEventListener('click', () => {
-    document.body.classList.toggle('dark-theme');
-  });
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("Site loaded. Sidebar ready.");
 });
